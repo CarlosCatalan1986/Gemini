@@ -1,0 +1,231 @@
+# Guía práctica: Tips para usar Gemini en Google Workspace
+
+Colección de consejos, fórmulas de prompting, atajos y ejemplos aplicados para maximizar la productividad con Gemini en Gmail, Drive, Docs, Sheets, Slides, Meet y Gems personalizados.
+
+---
+
+## 🎯 1. La Fórmula de Prompting Efectivo
+
+Para obtener respuestas precisas en Workspace, estructura tus solicitudes combinando cuatro elementos:
+* **Persona (Rol):** Quién debe ser la IA (*"Actúa como líder técnico / especialista de marketing"*).
+* **Tarea:** La acción concreta que necesitas (*"Redacta un correo", "Resume las conclusiones"*).
+* **Contexto:** Información de soporte (*"El cliente tuvo un retraso con la entrega de ayer"*).
+* **Formato:** Cómo deseas la salida (*"En 3 viñetas breves", "En una tabla con fechas y responsables"*).
+
+---
+
+## 🛠️ 2. Tips y Ejemplos por Aplicación
+
+### 📁 Google Drive
+
+#### 1. Búsqueda contextual e inteligente de archivos
+Encuentra archivos rápidamente por su contenido, autor o tema, incluso si no recuerdas el nombre exacto del archivo.
+> **Prompt de ejemplo:**  
+> *"Busca en mi Drive los documentos relacionados con la auditoría de seguridad del último trimestre que hayan sido compartidos por María. Lista los nombres de los archivos, la fecha de la última modificación y un resumen de una línea de cada uno."*
+
+#### 2. Síntesis y análisis cruzado de archivos PDF extensos
+Extrae conclusiones, cifras y comparativas de contratos, manuales o informes en formato PDF sin tener que leerlos por completo.
+> **Prompt de ejemplo:**  
+> *"Analiza el archivo @Manual_Políticas_Seguridad.pdf y el archivo @Contrato_Servicios_Proveedor.pdf. Genera una lista con los 5 puntos clave donde las cláusulas del proveedor no cumplen con nuestras normativas internas y recomienda qué cambios solicitar."*
+
+---
+
+### 📧 Gmail
+
+#### 1. Menciones directas con `@`
+Conecta correos directamente con archivos guardados en Google Drive escribiendo `@` en el panel lateral.
+> **Prompt de ejemplo:**  
+> *"Redacta una respuesta para este cliente confirmando la fecha de entrega y detallando los entregables de la fase 1 basándote en @Propuesta_Proyecto_2026.docx. Mantén un tono formal y servicial."*
+
+#### 2. Ajuste rápido de tono
+Usa el botón *Ayúdame a escribir* y selecciona la opción **Perfeccionar** (*Refine*) para cambiar el registro lingüístico sin reescribir todo.
+> **Prompt de ejemplo:**  
+> *"Hola Carlos, no alcanzamos a terminar el reporte hoy porque el servidor falló. Te lo paso mañana en la mañana sin falta."*  
+> *(Acción: Seleccionar texto > Perfeccionar > **Formalizar**)*
+
+#### 3. Resumen y extracción en hilos extensos
+Evita leer cadenas largas pidiendo al panel lateral que extraiga únicamente los compromisos.
+> **Prompt de ejemplo:**  
+> *"Resume esta cadena de correos en una lista con tres apartados: 1) Decisiones tomadas, 2) Tareas pendientes con su responsable directo, y 3) Próxima fecha límite acordada."*
+
+---
+
+### 📄 Google Docs
+
+#### 1. Superar el bloqueo de la página en blanco
+Genera borradores iniciales estructurados en lugar de partir desde cero.
+> **Prompt de ejemplo:**  
+> *"Actúa como un consultor de recursos humanos y crea una propuesta de política de trabajo híbrido para una empresa de 150 empleados. Incluye introducción, días requeridos en oficina, pautas de comunicación interna y consideraciones sobre herramientas tecnológicas."*
+
+#### 2. Reescritura focalizada y cambio de audiencia
+Adapta fragmentos técnicos para que sean comprensibles para audiencias no técnicas.
+> **Prompt de ejemplo (tras seleccionar un párrafo técnico):**  
+> *"Reescribe este párrafo para que un cliente sin conocimientos técnicos entienda el motivo de la migración a la nube y sus beneficios en costos, eliminando jerga de infraestructura."*
+
+#### 3. Estructuración de minutas a partir de notas desordenadas
+Transforma apuntes rápidos o ideas sueltas tomadas durante una reunión en un documento profesional listo para compartir.
+> **Prompt de ejemplo:**  
+> *"Toma los apuntes desordenados que tengo en esta página y genera una minuta formal estructurada en: 1) Objetivo de la sesión, 2) Temas discutidos, 3) Acuerdos finales y 4) Tabla de asignaciones con columnas para Tarea, Responsable y Fecha límite."*
+
+#### 4. Extracción y resumen ejecutivo de informes largos
+Sintetiza documentos densos en viñetas de alto nivel para toma de decisiones ejecutivas.
+> **Prompt de ejemplo:**  
+> *"Lee todo este documento y extrae un resumen ejecutivo de máximo 250 palabras enfocado en: el impacto financiero previsto, los 3 riesgos principales identificados y las recomendaciones inmediatas para el comité de dirección."*
+
+---
+
+### 📊 Google Sheets
+
+#### 1. Creación automatizada de estructuras de datos
+Diseña matrices y tablas completas con datos simulados mediante lenguaje natural.
+> **Prompt de ejemplo:**  
+> *"Crea una tabla para planificar una campaña de marketing digital de 3 meses. Debe incluir las siguientes columnas: Canal (Meta, Google, LinkedIn), Presupuesto estimado, Métrica principal (KPI), Responsable y Estado. Rellena 5 filas con datos de ejemplo realistas."*
+
+#### 2. Asistencia en fórmulas complejas
+Obtén la sintaxis exacta de fórmulas avanzadas sin memorizar funciones anidadas.
+> **Prompt de ejemplo:**  
+> *"Escribe una fórmula que busque el ID de la celda A2 en la hoja 'Ventas' (rango A:F) y retorne el valor de la columna 4 solo si el estado en la columna 6 es 'Completado'. Si no existe coincidencia, debe mostrar un guion ('-')."*
+
+#### 3. Creación de gráficos dinámicos con controles interactivos (Nivel medio)
+Genera visualizaciones interactivas vinculando tablas dinámicas (*Pivot Tables*) y filtros de datos (*Slicers*) para analizar métricas clave sin modificar manualmente las fórmulas ni los rangos de celdas.
+
+> **Flujo y configuración práctica:**
+> 1. **Estructura de origen:** Organiza tus datos en formato plano (ej. columnas: `Fecha`, `Región`, `Categoría`, `Vendedor`, `Monto_Venta`).
+> 2. **Tabla dinámica intermedia:** Selecciona los datos > ve al menú **Insertar** > **Tabla dinámica**.
+>    * **Filas:** `Categoría`.
+>    * **Valores:** `Monto_Venta` (Resumido por `SUMA`).
+> 3. **Inserción del gráfico:** Selecciona la tabla dinámica generada > menú **Insertar** > **Gráfico** (ej. *Gráfico de columnas agrupadas* o *Barras horizontales*).
+> 4. **Añadir control interactivo (Slicer):** Menú **Datos** > **Añadir un filtro interactivo** (*Slicer*). En la configuración lateral, selecciona la columna `Región` o `Fecha`. Al cambiar las opciones en el botón flotante, el gráfico se actualizará de forma instantánea.
+
+> **Prompts de ejemplo para Gemini:**
+> * **Diseño de la estructura y fórmula:**  
+>   *"Actúa como analista de datos. Tengo una tabla de ventas con las columnas Fecha, Región, Categoría y Monto. Explícame paso a paso cómo crear una tabla dinámica y un gráfico de barras que responda a un filtro interactivo (Slicer) por Región, de modo que el gráfico muestre automáticamente las 5 categorías más vendidas según la región seleccionada."*
+> * **Alternativa dinámica avanzada con fórmulas:**  
+>   *"Escribe una fórmula usando `QUERY` y una celda de validación de datos (menú desplegable en B1) para extraer dinámicamente las ventas totales por mes y alimentar un gráfico de líneas sin usar tablas dinámicas."*
+
+#### 4. Automatización con Macros y Google Apps Script
+Usa Gemini para generar scripts personalizados que limpien datos, apliquen formatos recurrentes o automaticen tareas repetitivas en tus hojas de cálculo sin necesidad de programar desde cero.
+
+> **Flujo de implementación:**
+> 1. Abre el panel lateral de Gemini en Google Sheets y solicita el script indicando claramente el nombre de las columnas y la acción requerida.
+> 2. En el menú superior de Sheets, ve a **Extensiones** > **Apps Script**.
+> 3. Borra el código por defecto dentro del editor (`myFunction`), pega el código generado por Gemini y haz clic en el ícono de **Guardar** (disquete).
+> 4. Haz clic en **Ejecutar** (o crea un botón en tu hoja desde **Insertar** > **Dibujo**, y asigna el nombre de la función para ejecutarla con un solo clic).
+
+> **Prompt de ejemplo para Gemini:**  
+> *"Actúa como desarrollador de Google Apps Script. Escribe una macro para Google Sheets llamada `limpiarYFormatearDatos()` que realice las siguientes acciones en la hoja activa:*  
+> *1. Elimine los espacios en blanco sobrantes (trim) en las columnas A y B.*  
+> *2. Convierta todos los textos de la columna B a mayúsculas.*  
+> *3. Aplique formato de moneda (USD) con 2 decimales a la columna C (desde la fila 2 en adelante).*  
+> *4. Pinte de color gris claro las filas alternas para mejorar la lectura.*  
+> *Incluye comentarios breves dentro del código explicando qué hace cada bloque."*
+
+> **Código generado de ejemplo (Apps Script):**
+> ```javascript
+> function limpiarYFormatearDatos() {
+>   const hoja = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+>   const ultimaFila = hoja.getLastRow();
+>   
+>   if (ultimaFila < 2) return; // Evita ejecutar si la hoja solo tiene encabezados o está vacía
+>   
+>   // 1 & 2: Limpieza de texto y mayúsculas en columnas A y B
+>   const rangoTexto = hoja.getRange(2, 1, ultimaFila - 1, 2);
+>   const valoresTexto = rangoTexto.getValues();
+>   
+>   for (let i = 0; i < valoresTexto.length; i++) {
+>     valoresTexto[i][0] = String(valoresTexto[i][0]).trim(); // Columna A limpia
+>     valoresTexto[i][1] = String(valoresTexto[i][1]).trim().toUpperCase(); // Columna B a mayúsculas
+>   }
+>   rangoTexto.setValues(valoresTexto);
+>   
+>   // 3: Formato de moneda para columna C
+>   const rangoMoneda = hoja.getRange(2, 3, ultimaFila - 1, 1);
+>   rangoMoneda.setNumberFormat("$#,##0.00");
+>   
+>   // 4: Bandas de color alternas (gris claro)
+>   const rangoTotal = hoja.getRange(2, 1, ultimaFila - 1, hoja.getLastColumn());
+>   rangoTotal.applyRowBanding(SpreadsheetApp.BandingTheme.LIGHT_GREY);
+> }
+> ```
+
+---
+
+### 🖼️ Google Slides
+
+#### 1. Estructura y narrativa de presentaciones
+Crea el esqueleto argumental antes de diseñar los elementos visuales.
+> **Prompt de ejemplo:**  
+> *"Estructura una presentación de 5 diapositivas para presentar los resultados de ventas del último trimestre ante la junta directiva. Para cada diapositiva indica: Título sugerido, 3 puntos clave a proyectar y notas breves para el orador."*
+
+#### 2. Generación de imágenes conceptuales a medida
+Crea recursos visuales alineados a la temática sin depender de bancos de imágenes genéricos.
+> **Prompt de ejemplo:**  
+> *"Ilustración digital minimalista de un apretón de manos tecnológico compuesto por circuitos de datos brillantes y conexiones de red en tonos azul marino y celeste, con fondo limpio y sin texto."*
+
+---
+
+### 📹 Google Meet
+
+#### 1. Minutas automáticas
+Permite que Gemini transcriba y organice los puntos clave de la reunión directamente en un Google Doc al finalizar.
+> **Configuración práctica:**  
+> Activa el ícono de **Toma de notas automática** antes de iniciar la sesión; al terminar, abre el documento generado y utiliza el panel lateral con:  
+> *"Extrae los próximos pasos acordados durante la llamada en una lista con viñetas indicando qué persona debe liderar cada tarea."*
+
+#### 2. Ponerse al día al entrar tarde
+Consulta el progreso de la llamada sin interrumpir a los expositores.
+> **Prompt de ejemplo (en el panel lateral de Meet):**  
+> *"Entré 15 minutos tarde a la reunión. ¿Cuáles fueron los puntos principales tratados hasta ahora y se mencionó alguna actualización sobre el presupuesto?"*
+
+---
+
+## 💎 3. Creación y Casos de Uso de Gems Personalizados
+
+Los **Gems** son versiones personalizadas de Gemini configuradas con instrucciones permanentes, tono específico y archivos de referencia. Evitan tener que repetir el contexto en cada conversación y sirven como asistentes especializados por departamento.
+
+### Cómo crear un Gem en Workspace
+1. Abre [gemini.google.com](https://gemini.google.com).
+2. En el menú lateral izquierdo, haz clic en **Gestor de Gems** (*Gem Manager*) > **Nuevo Gem** (*New Gem*).
+3. Asigna un **Nombre** y describe su propósito.
+4. En el campo **Instrucciones**, define su rol, pautas de respuesta, tono y lo que nunca debe hacer.
+5. (Opcional) Adjunta documentos de referencia (manuales, plantillas o catálogos) para fundamentar sus respuestas.
+6. Haz clic en **Crear**.
+
+---
+
+### Ejemplos prácticos por área de oficina
+
+#### 👥 1. Recursos Humanos: Gem Asistente de Onboarding y Políticas Internas
+* **Nombre sugerido:** `HR Policy & Onboarding Assistant`
+* **Instrucciones para configurar el Gem:**
+  > *"Actúa como el especialista senior de Recursos Humanos y Cultura de la empresa. Tu función es resolver dudas de colaboradores sobre beneficios, vacaciones, licencias y procesos de incorporación. Responde siempre con tono empático, claro y profesional. Basa tus respuestas estrictamente en los manuales de la empresa cargados en tu contexto. Si una pregunta involucra un conflicto legal o una situación sensible que requiera mediación directa, instruye al usuario a contactar formalmente al equipo de RRHH mediante correo interno."*
+* **Ejemplo de consulta en la oficina:**
+  > *"Un colaborador nuevo me pregunta cuántos días de permiso con goce de sueldo le corresponden por mudanza y con cuánta anticipación debe avisar. ¿Cómo se lo explico de forma clara?"*
+
+#### 💼 2. Área Comercial: Gem Calificador de Leads y Respuestas a Objeciones
+* **Nombre sugerido:** `Sales Coach B2B`
+* **Instrucciones para configurar el Gem:**
+  > *"Actúa como director comercial y estratega de ventas consultivas B2B. Tu objetivo es ayudar a los ejecutivos de cuentas a calificar prospectos, redactar propuestas de valor personalizadas y neutralizar objeciones comunes (precio, tiempo, competencia). Tu tono debe ser persuasivo, directo y orientado al retorno de inversión (ROI). Siempre que redactes correos de seguimiento, incluye un llamado a la acción (CTA) claro y no superes las 120 palabras."*
+* **Ejemplo de consulta en la oficina:**
+  > *"Un cliente potencial nos indicó que nuestro software es un 25% más caro que la opción de la competencia y que están por cerrar con ellos. Redacta un correo breve para defender nuestro valor enfocado en soporte 24/7 y tiempo de implementación reducido."*
+
+#### 📈 3. Finanzas: Gem Analista de Variaciones Presupuestarias
+* **Nombre sugerido:** `Finance & Budget Analyst`
+* **Instrucciones para configurar el Gem:**
+  > *"Actúa como controller financiero corporativo. Tu misión es analizar tablas de gastos reales versus presupuestados, calcular variaciones absolutas y porcentuales, e identificar desviaciones materiales. Tu tono es técnico, analítico y riguroso. Al presentar hallazgos, estructura siempre la respuesta en: 1) Resumen de la variación neta, 2) Tres centros de costo con mayor sobregiro, y 3) Recomendación de medidas correctivas."*
+* **Ejemplo de consulta en la oficina:**
+  > *"Tengo esta tabla de gastos de Q1 donde Marketing gastó $45,000 (presupuesto $35,000) y TI gastó $80,000 (presupuesto $90,000). Analiza el impacto neto global y redacta una explicación ejecutiva para la gerencia."*
+
+#### 📑 4. Contabilidad: Gem Revisor de Cumplimiento y Conciliación
+* **Nombre sugerido:** `Auditor y Soporte Contable`
+* **Instrucciones para configurar el Gem:**
+  > *"Actúa como auditor contable senior. Asistes al equipo contable en la clasificación correcta de cuentas, revisión de criterios de devengo, deducciones fiscales y preparación de conciliaciones bancarias. Presenta tus análisis en tablas comparativas con columnas para Concepto, Cuenta Contable Sugerida, Soporte Documental Requerido y Observación Fiscal. Recuerda siempre advertir al usuario verificar las normativas tributarias locales vigentes."*
+* **Ejemplo de consulta en la oficina:**
+  > *"Recibimos una factura de un proveedor del extranjero por licencias de software SaaS y otra por servicios de consultoría remota. ¿Cómo debemos clasificar ambos conceptos contablemente y qué documentos de soporte debemos adjuntar para la auditoría?"*
+
+---
+
+## 💡 Buenas Prácticas Generales
+
+1. **Itera en lugar de reiniciar:** Si el primer borrador no da en el blanco, pídele un refinamiento directo (*"Hazlo más conciso"*, *"Reemplaza las viñetas por una tabla"*).
+2. **Revisa siempre antes de enviar:** Gemini optimiza tiempos y estructura ideas, pero la validación final de cifras, nombres y acuerdos siempre corresponde al criterio profesional humano.
